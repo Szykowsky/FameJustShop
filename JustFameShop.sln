@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JustFameShop.Orders", "JustFameShop.Orders", "{B957DB9D-EE30-40C4-BBCB-A3144EF7D082}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JustFameShop.GateWays", "JustFameShop.GateWays", "{73F70A67-C5C0-45D8-AD35-2F7FA19027ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JustFameShop.Payments", "JustFameShop.Payments", "{A0F967F5-44C8-468D-912C-E62E3E17DC90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JustFameShop.Products", "JustFameShop.Products", "{45102EFB-0A7A-4A25-BB81-B62DDDD824DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JustFameShop.Delivery", "JustFameShop.Delivery", "{73E0C0AB-9CF1-4F1F-92F4-294332F622D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustFameShop.Orders.Api", "JustFameShop.Api\JustFameShop.Orders.Api.csproj", "{0E0F176C-0235-476C-90CA-C098B114CCC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustFameShop.Products.API", "JustFameShop.Products.API\JustFameShop.Products.API.csproj", "{868532FF-6A31-40EE-AE94-F5C6E082C268}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JustFameShop.Common", "JustFameShop.Common", "{B5CB1224-598E-4C41-AFA2-2A58FD150978}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{97FD912D-B7BC-467F-9711-C0AC9222ACFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FameJustShop.Orders.Domain", "FameJustShop.Orders.Domain\FameJustShop.Orders.Domain.csproj", "{4146FBC4-7693-4071-A2DD-734625F8F314}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{CE95B4B2-92CC-4706-BD46-E2F88C1D2AF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FameJustShop.Orders.Persistence", "FameJustShop.Orders.Persistence\FameJustShop.Orders.Persistence.csproj", "{0AAE8DD4-1638-493C-A684-FA73CC87D409}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Queries", "Queries", "{94F6A9D9-4086-4D1A-8E2D-F96196B908B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FameJustShop.Orders.Queries", "FameJustShop.Orders.Queries\FameJustShop.Orders.Queries.csproj", "{2E9B536A-5069-427B-AB9E-A8F816D6008C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{1BC48ADA-1B7F-4AD0-B842-1F2079ED3E1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FameJustShop.Orders.Commands", "FameJustShop.Orders.Commands\FameJustShop.Orders.Commands.csproj", "{757D34C1-F785-49D8-827D-4A77BDD8F27A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E0F176C-0235-476C-90CA-C098B114CCC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E0F176C-0235-476C-90CA-C098B114CCC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E0F176C-0235-476C-90CA-C098B114CCC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E0F176C-0235-476C-90CA-C098B114CCC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{868532FF-6A31-40EE-AE94-F5C6E082C268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{868532FF-6A31-40EE-AE94-F5C6E082C268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{868532FF-6A31-40EE-AE94-F5C6E082C268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{868532FF-6A31-40EE-AE94-F5C6E082C268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4146FBC4-7693-4071-A2DD-734625F8F314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4146FBC4-7693-4071-A2DD-734625F8F314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4146FBC4-7693-4071-A2DD-734625F8F314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4146FBC4-7693-4071-A2DD-734625F8F314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AAE8DD4-1638-493C-A684-FA73CC87D409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AAE8DD4-1638-493C-A684-FA73CC87D409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AAE8DD4-1638-493C-A684-FA73CC87D409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AAE8DD4-1638-493C-A684-FA73CC87D409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E9B536A-5069-427B-AB9E-A8F816D6008C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E9B536A-5069-427B-AB9E-A8F816D6008C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E9B536A-5069-427B-AB9E-A8F816D6008C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E9B536A-5069-427B-AB9E-A8F816D6008C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757D34C1-F785-49D8-827D-4A77BDD8F27A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757D34C1-F785-49D8-827D-4A77BDD8F27A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757D34C1-F785-49D8-827D-4A77BDD8F27A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757D34C1-F785-49D8-827D-4A77BDD8F27A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E0F176C-0235-476C-90CA-C098B114CCC0} = {B957DB9D-EE30-40C4-BBCB-A3144EF7D082}
+		{868532FF-6A31-40EE-AE94-F5C6E082C268} = {45102EFB-0A7A-4A25-BB81-B62DDDD824DA}
+		{97FD912D-B7BC-467F-9711-C0AC9222ACFA} = {B957DB9D-EE30-40C4-BBCB-A3144EF7D082}
+		{4146FBC4-7693-4071-A2DD-734625F8F314} = {97FD912D-B7BC-467F-9711-C0AC9222ACFA}
+		{CE95B4B2-92CC-4706-BD46-E2F88C1D2AF4} = {B957DB9D-EE30-40C4-BBCB-A3144EF7D082}
+		{0AAE8DD4-1638-493C-A684-FA73CC87D409} = {CE95B4B2-92CC-4706-BD46-E2F88C1D2AF4}
+		{94F6A9D9-4086-4D1A-8E2D-F96196B908B4} = {B957DB9D-EE30-40C4-BBCB-A3144EF7D082}
+		{2E9B536A-5069-427B-AB9E-A8F816D6008C} = {94F6A9D9-4086-4D1A-8E2D-F96196B908B4}
+		{1BC48ADA-1B7F-4AD0-B842-1F2079ED3E1D} = {B957DB9D-EE30-40C4-BBCB-A3144EF7D082}
+		{757D34C1-F785-49D8-827D-4A77BDD8F27A} = {1BC48ADA-1B7F-4AD0-B842-1F2079ED3E1D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FF87074-F05B-4C70-8C52-8FE2F91189BA}
+	EndGlobalSection
+EndGlobal
