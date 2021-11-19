@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -6,6 +6,13 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FameJustShop.Orders.Commands\FameJustShop.Orders.Commands.csproj" />
+    <ProjectReference Include="..\FameJustShop.Orders.Domain\FameJustShop.Orders.Domain.csproj" />
+    <ProjectReference Include="..\FameJustShop.Orders.Persistence\FameJustShop.Orders.Persistence.csproj" />
+    <ProjectReference Include="..\FameJustShop.Orders.Queries\FameJustShop.Orders.Queries.csproj" />
   </ItemGroup>
 
 </Project>

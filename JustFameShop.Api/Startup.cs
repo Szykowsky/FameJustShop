@@ -2,17 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FameJustShop.Orders.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace JustFameShop.Api
+namespace JustFameShop.Orders.Api
 {
     public class Startup
     {
@@ -26,11 +28,15 @@ namespace JustFameShop.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<OrderContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("Order"));
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "JustFameShop.Api", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "JustFameShop.Order.Api", Version = "v1" });
             });
         }
 
@@ -41,7 +47,7 @@ namespace JustFameShop.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JustFameShop.Api v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JustFameShop.Order.Api v1"));
             }
 
             app.UseHttpsRedirection();
